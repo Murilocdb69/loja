@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+</head>
+<body>
+    <h1>Seus produtos:</h1>
+    <p id="produtos"></p>
+    <p id="nomes"></p>
+    <p id="preços"></p>
+    <script>
+        let produtos= Number(prompt("Você gostaria de vender algo? \n 1-Sim \n 2-Não"))
+        while (produtos===1) {
+            let produto1 = prompt("Qual o numero do produto")
+            let nomeproduto = prompt("O que deseja vender?")
+            let preco=Number(prompt("Digite o preço do produto"))
+            document.getElementById("produtos").innerHTML+= "Numero: " +produto1 + "<br>" + "Nome do produto: " + nomeproduto +"<br>"+"Valor: " + preco +"<br>" +"-----------------------------" +"<br>"
+            produtos= Number(prompt("Você gostaria de vender mais alguma coisa? \n 1-Sim \n 2-Não"))
+            }
+
+    </script>
+</body>
+</html>
